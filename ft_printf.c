@@ -28,7 +28,7 @@ int print_printf(char S_type, va_list arg)
     else if (S_type == 'c')
         p_bytes = ft_putchar(va_arg(arg, int));
     else if (S_type == 's')
-        p_bytes = ft_s(va_arg(arg, char *));
+        p_bytes = ft_putstr(va_arg(arg, char *));
     else if (S_type == 'i' || S_type == 'd')
         p_bytes = ft_d(va_arg(arg, int));
     else if (S_type == 'u')

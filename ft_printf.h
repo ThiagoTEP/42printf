@@ -7,5 +7,6 @@
 
 int		ft_printf(const char *str, ...);
 int ft_putchar(char c);
+int ft_putstr(char *str);
 
 #endif
