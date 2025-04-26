@@ -3,15 +3,15 @@
 
 int ft_putstr(char *str)
 {
-    int i;
+    int count;
 
-    i = 0;
+    count = 0;
     if (!str)
         return (ft_putstr("(NULL)"));
-    while(str[i])
+    while(str[count])
     {
-        ft_putchar(str[i]);
-        i++;
+        ft_putchar(str[count]);
+        count++;
     }
-    return (i);
+    return (count);
 }
