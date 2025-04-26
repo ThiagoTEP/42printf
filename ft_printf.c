@@ -24,9 +24,9 @@ int print_printf(char S_type, va_list arg)
 
     p_bytes = 0;
     if(S_type == '%')
-        p_bytes = ft_c('%');
+        p_bytes = ft_putchar('%');
     else if (S_type == 'c')
-        p_bytes = ft_printc(va_arg(arg, int));
+        p_bytes = ft_putchar(va_arg(arg, int));
     else if (S_type == 's')
         p_bytes = ft_s(va_arg(arg, char *));
     else if (S_type == 'i' || S_type == 'd')
