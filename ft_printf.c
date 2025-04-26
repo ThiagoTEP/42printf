@@ -30,13 +30,13 @@ int print_printf(char S_type, va_list arg)
     else if (S_type == 's')
         p_bytes = ft_putstr(va_arg(arg, char *));
     else if (S_type == 'i' || S_type == 'd')
-        p_bytes = ft_d(va_arg(arg, int));
+        p_bytes = ft_putnbr((long)va_arg(arg, int));
     else if (S_type == 'u')
-        p_bytes = ft_u(va_arg(arg, unsigned int));
+        p_bytes = ft_putnbr_un(va_arg(arg, unsigned int));
     else if (S_type == 'x' || S_type == 'X')
-        p_bytes = ft_x(va_arg(arg, unsigned int), S_type);
+        p_bytes = ft_putnbr_hex(va_arg(arg, unsigned int), S_type);
     else if (S_type == 'p')
-        p_bytes = ft_p(va_arg(arg, unsigned long));
+    p_bytes = ft_putpointer((unsigned long)va_arg(arg, void *));
     return(p_bytes);
     
 }

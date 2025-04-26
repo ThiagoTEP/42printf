@@ -8,5 +8,7 @@
 int		ft_printf(const char *str, ...);
 int ft_putchar(char c);
 int ft_putstr(char *str);
+int ft_putnbr(long num);
+int ft_putnbr_hex(unsigned int num, char S_type);
 
 #endif
