@@ -6,14 +6,14 @@
 /*   By: thevaris <thevaris@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 11:03:34 by thevaris          #+#    #+#             */
-/*   Updated: 2025/04/27 11:03:36 by thevaris         ###   ########.fr       */
+/*   Updated: 2025/04/27 11:16:38 by thevaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    write(1, &c, 1);
-    return(1);
+	write (1, &c, 1);
+	return (1);
 }
