@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thevaris <thevaris@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/27 11:03:02 by thevaris          #+#    #+#             */
+/*   Updated: 2025/04/27 11:03:23 by thevaris         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ft_printf.h"
 
@@ -66,39 +77,4 @@ int		ft_printf(const char *str, ...)
     }
     va_end(arg);
     return (count);
-}
-
-#include <stdio.h>
-int main ()
-{
-    int x = 5;
-    char c = 'd';
-    char *s = "teste imprimir";
-    unsigned int z = 255;
-
-
-    ft_printf(" int %d\n", x);
-    printf(" int %d\n\n", x);
-
-    ft_printf(" char %c\n", c);
-    printf(" char %c\n\n", c);
-
-    ft_printf(" String %s\n", s);
-    printf(" String %s\n\n", s);
-
-    ft_printf(" hex %X\n", z);
-    printf(" hex %X\n\n", z);
-
-    int var = 42;
-    int *ptr = &var;
-
-  
-    ft_printf("O endereço da variável é: %p\n", ptr);
-    printf("O endereço da variável é: %p\n", ptr);
-
-
-    ft_printf("O %%%%% \n");
-    printf("O %%%%% \n");
-
-
 }
